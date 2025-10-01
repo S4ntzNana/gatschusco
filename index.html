@@ -108,56 +108,39 @@
       height: auto;
     }
 
+    /* Responsividade para celular */
     @media (max-width: 600px) {
+      header {
+        padding: 20px 10px;
+      }
+
       header h1 {
-        font-size: 2.2em;
+        font-size: 1.8em;
+        padding: 0 10px;
       }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 10px;
+        gap: 15px;
+      }
+
       .card {
-        width: 90%;
+        width: 95%;
       }
-    }
-  </style>
-</head>
 
-<body>
+      .card h2 {
+        font-size: 1.5em;
+      }
 
-  <header>
-    <h1>💖 Cartinhas pra Meu Marido 💖</h1>
-  </header>
+      .card p {
+        font-size: 1em;
+      }
 
-  <main class="container">
+      footer {
+        font-size: 1em;
+        padding: 15px 10px;
+      }
 
-    <a href="carta1.html" class="card">
-      <img src="https://i.postimg.cc/7LnrY4Wp/download-removebg-preview-1.png" alt="Cartinha 1: Para minha namorada" />
-      <h2>Para Você</h2>
-      <p>Uma carta cheia de amor e carinho.</p>
-    </a>
-
-    <a href="carta2.html" class="card">
-      <img src="https://i.postimg.cc/qv5HNQJc/download.jpg" alt="Cartinha 2: Meus Sonhos" />
-      <h2>Meus Sonhos</h2>
-      <p>Quero dividir cada sonho com você.</p>
-    </a>
-
-    <a href="carta3.html" class="card">
-      <img src="https://i.postimg.cc/FH9HyPQ7/images-removebg-preview.png" alt="Cartinha 3: Gratidão" />
-      <h2>Gratidão</h2>
-      <p>Pela sua luz nos meus dias.</p>
-    </a>
-
-  </main>
-
-  <footer>
-    <p>Feito com ❤️ por mim, pensando em você.</p>
-  </footer>
-
-  <!-- Gatinhos decorativos -->
-  <div class="decor decor-top-left">
-    <img src="https://i.postimg.cc/MHtC0Yw6/download-removebg-preview.png" alt="gatinho decorativo topo esquerdo" />
-  </div>
-  <div class="decor decor-bottom-right">
-    <img src="https://i.postimg.cc/3xybchh2/download-removebg-preview-2.png" alt="gatinho decorativo canto inferior direito" />
-  </div>
-
-</body>
-</html>
+      .decor-top-left {

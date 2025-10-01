@@ -5,61 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cartinhas pro meu homi 💌</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cartinhas pro meu homi 💌</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <header>
-    <h1>💖 Cartinhas pra Meu Marido 💖</h1>
-  </header>
-
-  <main class="container">
-
-    <a href="carta1.html" class="card">
-      <img src="https://i.postimg.cc/7LnrY4Wp/download-removebg-preview-1.png" alt="Cartinha 1: Para minha namorada" />
-      <h2>Para Você</h2>
-      <p>Uma carta cheia da sua muié.</p>
-    </a>
-
-    <a href="carta2.html" class="card">
-      <img src="https://i.postimg.cc/qv5HNQJc/download.jpg" alt="Cartinha 2: Meus Sonhos" />
-      <h2>Meus Sonhos</h2>
-      <p>Quero dividir cada momento com você.</p>
-    </a>
-
-    <a href="carta3.html" class="card">
-      <img src="https://i.postimg.cc/FH9HyPQ7/images-removebg-preview.png" alt="Cartinha 3: Gratidão" />
-      <h2>=^.^=</h2>
-      <p>te amo muitao.</p>
-    </a>
-
-  </main>
-    <!-- parte do HTML -->
-    <a href="datas.html" class="btn btn-calendar">
-      <img src="calendario-rosinha.svg" alt="Calendário" class="icon-calendar" />
-    </a>
-
-  <footer>
-    <p>Feito com ❤️ por mim, pensando em você.</p>
-  </footer>
-
-  <!-- Gatinhos decorativos -->
-  <div class="decor decor-top-left">
-    <img src="https://i.postimg.cc/MHtC0Yw6/download-removebg-preview.png" alt="gatinho decorativo topo esquerdo" />
-  </div>
-  <div class="decor decor-bottom-right">
-    <img src="https://i.postimg.cc/3xybchh2/download-removebg-preview-2.png" alt="gatinho decorativo canto inferior direito" />
-  </div>
-
-</body>
-</html>
   <style>
     /* Estilo base */
     body {
@@ -137,6 +82,34 @@
       font-size: 1.2em;
     }
 
+    /* Botão de calendário flutuante */
+    .btn-calendar {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #f5b7b1;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-decoration: none;
+      transition: background-color 0.3s, transform 0.2s;
+      z-index: 999;
+    }
+
+    .btn-calendar:hover {
+      background-color: #e5989b;
+      transform: scale(1.1);
+    }
+
+    .btn-calendar img {
+      width: 32px;
+      height: 32px;
+    }
+
     /* Gatinho decorativo */
     .decor {
       position: absolute;
@@ -196,29 +169,52 @@
         font-size: 1em;
         padding: 15px 10px;
       }
+    }
+  </style>
+</head>
 
-      .decor-top-left {
-.btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #f5b7b1;
-  color: white;
-  font-size: 2em;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  line-height: 60px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-decoration: none;
-  z-index: 999;
-  transition: background-color 0.3s, transform 0.2s;
-}
+<body>
 
-.btn:hover {
-  background-color: #e5989b;
-  transform: scale(1.1);
-}
-</style>
+  <header>
+    <h1>💖 Cartinhas pra Meu Marido 💖</h1>
+  </header>
+
+  <main class="container">
+    <a href="carta1.html" class="card">
+      <img src="https://i.postimg.cc/7LnrY4Wp/download-removebg-preview-1.png" alt="Cartinha 1: Para minha namorada" />
+      <h2>Para Você</h2>
+      <p>Uma carta cheia da sua muié.</p>
+    </a>
+
+    <a href="carta2.html" class="card">
+      <img src="https://i.postimg.cc/qv5HNQJc/download.jpg" alt="Cartinha 2: Meus Sonhos" />
+      <h2>Meus Sonhos</h2>
+      <p>Quero dividir cada momento com você.</p>
+    </a>
+
+    <a href="carta3.html" class="card">
+      <img src="https://i.postimg.cc/FH9HyPQ7/images-removebg-preview.png" alt="Cartinha 3: Gratidão" />
+      <h2>=^.^=</h2>
+      <p>te amo muitao.</p>
+    </a>
+  </main>
+
+  <!-- Botão de calendário rosinha -->
+  <a href="datas.html" class="btn btn-calendar">
+    <img src="https://i.postimg.cc/KjFctsmK/images-removebg-preview.png" />
+  </a>
+
+  <footer>
+    <p>Feito com ❤️ por mim, pensando em você.</p>
+  </footer>
+
+  <!-- Gatinhos decorativos -->
+  <div class="decor decor-top-left">
+    <img src="https://i.postimg.cc/MHtC0Yw6/download-removebg-preview.png" alt="gatinho decorativo topo esquerdo" />
+  </div>
+  <div class="decor decor-bottom-right">
+    <img src="https://i.postimg.cc/3xybchh2/download-removebg-preview-2.png" alt="gatinho decorativo canto inferior direito" />
+  </div>
+
+</body>
+</html>

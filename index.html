@@ -41,7 +41,11 @@
     </a>
 
   </main>
-<a href="datas.html" class="btn">📅</a>
+    <!-- parte do HTML -->
+    <a href="datas.html" class="btn btn-calendar">
+      <img src="calendario-rosinha.svg" alt="Calendário" class="icon-calendar" />
+    </a>
+
   <footer>
     <p>Feito com ❤️ por mim, pensando em você.</p>
   </footer>
@@ -194,3 +198,32 @@
       }
 
       .decor-top-left {
+/* parte do CSS - adicione aos estilos existentes */
+
+.btn-calendar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f5b7b1; /* rosa claro tipo seu esquema */
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  z-index: 999;
+}
+
+.btn-calendar:hover {
+  background-color: #e5989b; /* rosa mais escuro no hover */
+  transform: scale(1.1);
+}
+
+.btn-calendar .icon-calendar {
+  width: 32px;
+  height: 32px;
+}
+
